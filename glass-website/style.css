@@ -195,13 +195,20 @@ main {
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+/* GENERAL ELEMENTS */
+.section {
+  padding: 15rem 3rem;
+  border-top: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
 }
 
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section__title {
+  max-width: 80rem;
+  margin: 0 auto 8rem auto;
 }
